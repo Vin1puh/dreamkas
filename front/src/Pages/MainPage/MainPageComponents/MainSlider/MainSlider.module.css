@@ -1,0 +1,113 @@
+.slider {
+  width: 70%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  background: transparent;
+}
+.slider__container {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.slider__container .arrow {
+  width: 50px;
+  cursor: pointer;
+  transition: 0.33s;
+}
+.slider__container .arrow:hover {
+  transform: scale(1.1) translate(10px);
+}
+.slider__container__wrapper {
+  width: 85%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.slider__container__wrapper img {
+  width: 50%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.slider__container__wrapper .info {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: start;
+}
+.slider__container__wrapper .info img {
+  height: 70px;
+}
+.slider__container__wrapper .info h1 {
+  font-size: 5rem;
+}
+.slider__container__wrapper .info p {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+.slider__container__wrapper .info .buttons {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.slider__container__wrapper .info .buttons button {
+  height: 40px;
+  border-radius: 2rem;
+  border: none;
+  cursor: pointer;
+  padding: 0 2rem;
+  font-size: 2rem;
+  color: white;
+}
+.slider__container__wrapper .info .buttons .button_1 {
+  background: transparent;
+  border: 2px solid #222;
+}
+.slider__container__wrapper .info .buttons .button_2 {
+  background: green;
+  box-shadow: black 0 0 15px;
+}
+.slider__container__wrapper .info .buttons .button_2:hover {
+  box-shadow: black 1px 1px 20px;
+}
+.slider .slider__container__wrapper {
+  animation: fadeIn 0.5s ease-in-out;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.slider .slider__container__wrapper img {
+  transition: opacity 0.3s ease;
+}
+.slider .info h1,
+.slider .info p,
+.slider .buttons {
+  animation: slideUp 0.4s ease-out;
+}
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=MainSlider.module.css.map */

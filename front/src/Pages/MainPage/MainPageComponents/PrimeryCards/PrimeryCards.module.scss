@@ -1,0 +1,24 @@
+@import "../../../../@mixins";
+.primery{
+  width: 70%;
+  padding: 5rem 0;
+  background: #181818;
+  @include flex-center;
+  border-radius: 2rem;
+
+  &__container{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    h1{
+      font-size:4rem;
+      margin-bottom: 4rem;
+    }
+    &__grid{
+      width: 100%;
+      @include grid(1, 2, 0)
+    }
+  }
+}

@@ -1,0 +1,67 @@
+.for_grid {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.BigCard {
+  cursor: pointer;
+  width: 92%;
+  height: 93%;
+  border-radius: 2rem;
+  background: #181818;
+  box-shadow: 0 0 15px rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  overflow: hidden;
+  transition: 0.1s;
+}
+.BigCard:hover {
+  scale: 1.01;
+}
+.BigCard img {
+  width: 100%;
+  height: 50%;
+  object-fit: contain;
+  object-position: center;
+}
+.BigCard__block {
+  width: 100%;
+  height: 50%;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.BigCard__block__text {
+  width: 100%;
+  height: 75%;
+}
+.BigCard__block__text h1 {
+  width: 100%;
+  text-align: start;
+  text-wrap: wrap;
+}
+.BigCard__block__price {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: start;
+}
+.BigCard__block__price p {
+  font-size: 1.5rem;
+}
+.BigCard__block__price h3 {
+  font-size: 3rem;
+  color: white;
+}
+
+/*# sourceMappingURL=BigCard.module.css.map */

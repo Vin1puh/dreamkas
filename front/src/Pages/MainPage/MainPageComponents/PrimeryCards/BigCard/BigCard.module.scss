@@ -1,0 +1,58 @@
+@import "../../../../../@mixins";
+.for_grid{
+  width: 100%;
+  height: 700px;
+  @include flex-center;
+}
+.BigCard{
+  cursor: pointer;
+  width: 92%;
+  height: 93%;
+  border-radius: 2rem;
+  background: #181818;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+  @include flex-between-column;
+  overflow: hidden;
+  transition: .1s;
+
+  &:hover{
+    scale: 1.01;
+  }
+  img{
+    width: 100%;
+    height: 50%;
+    object-fit: contain;
+    object-position: center;
+  }
+  &__block{
+    width: 100%;
+    height: 50%;
+    padding: 3rem;
+    @include flex-between-column;
+
+    &__text{
+      width: 100%;
+      height: 75%;
+
+      h1{
+        width: 100%;
+        text-align: start;
+        text-wrap: wrap;
+      }
+    }
+    &__price{
+      width: 100%;
+      height: 25%;
+      @include flex-between-column;
+      align-items: start;
+
+      p{
+        font-size: 1.5rem;
+      }
+      h3{
+        font-size: 3rem;
+        color: white;
+      }
+    }
+  }
+}
