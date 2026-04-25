@@ -4,6 +4,7 @@ import MainPage from './Pages/MainPage/MainPage.jsx'
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Header from "./Components/Header/Header.jsx";
 import {StrictMode} from "react";
+import Footer from "./Components/Footer/Footer.jsx";
 
 createRoot(document.getElementById('root')).render(
     <StrictMode>
@@ -12,6 +13,7 @@ createRoot(document.getElementById('root')).render(
             <Routes>
                 <Route path="/" index element={<MainPage />} />
             </Routes>
+            <Footer />
         </BrowserRouter>
     </StrictMode>
 )

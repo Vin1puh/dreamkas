@@ -48,6 +48,9 @@ header nav {
   align-items: center;
   justify-content: space-between;
 }
+header nav .logo {
+  width: 50px;
+}
 
 main {
   width: 100%;
@@ -56,6 +59,117 @@ main {
   flex-direction: column;
   align-items: center;
   background: linear-gradient(to bottom right, #111, #222);
+}
+
+footer {
+  width: 100%;
+  height: 400px;
+  background: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0;
+}
+footer nav {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer nav .nav__left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: start;
+}
+footer nav .nav__left .choose {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+footer nav .nav__left .choose__block {
+  margin-bottom: 2rem;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: start;
+  font-size: 1.8rem;
+  color: #ccc;
+}
+footer nav .nav__left .choose__block img {
+  height: 100%;
+  margin-right: 2rem;
+}
+footer nav .nav__left .kas {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: start;
+}
+footer nav .nav__left .kas a {
+  font-size: 1.8rem;
+  color: #ccc;
+}
+footer nav .nav__left .kas__block {
+  width: 100%;
+  height: 100%;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer nav .nav__left .kas__block__bottom {
+  width: 45%;
+  height: 100%;
+}
+footer nav .nav__left .kas__block__bottom a {
+  font-size: 1.5rem;
+  line-height: 180%;
+}
+footer nav .nav__left .kas__block__bottom .bold {
+  font-weight: 600;
+}
+footer nav .nav__right {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+footer nav .nav__right .tel {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+footer nav .nav__right .pic__block {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  margin-bottom: 2rem;
+}
+footer nav .nav__right .pic__block img {
+  cursor: pointer;
+  height: 100%;
+  margin-right: 2rem;
+}
+footer nav .nav__right .choose__block {
+  margin-bottom: 2rem;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: start;
+  font-size: 1.8rem;
+  color: #ccc;
+}
+footer nav .nav__right .choose__block img {
+  height: 100%;
+  margin-right: 2rem;
 }
 
 .spiner {
