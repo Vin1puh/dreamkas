@@ -64,4 +64,121 @@
   color: white;
 }
 
+.overflow {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+.overflow .popup {
+  width: 90%;
+  height: 90%;
+  background: linear-gradient(to left top, #181818, #252525);
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 3rem;
+}
+.overflow .popup__top {
+  width: 100%;
+  height: 40px;
+}
+.overflow .popup__top__close {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: 0.33s;
+}
+.overflow .popup__top__close:hover {
+  rotate: 90deg;
+}
+.overflow .popup__top__close .line {
+  width: 40px;
+  position: absolute;
+  height: 10px;
+  border-radius: 2rem;
+  background: white;
+  transform: rotate(45deg);
+}
+.overflow .popup__bottom {
+  width: 100%;
+  height: calc(100% - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.overflow .popup__bottom__info {
+  width: 70%;
+  height: 100%;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: start;
+}
+.overflow .popup__bottom__info::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+.overflow .popup__bottom__info img {
+  width: 100%;
+  height: 500px;
+  object-fit: contain;
+}
+.overflow .popup__bottom__info p {
+  margin: 1rem 0;
+}
+.overflow .popup__bottom__buy {
+  width: 25%;
+  height: 100%;
+}
+.overflow .popup__bottom__buy__cont {
+  top: 0;
+  border-radius: 2rem;
+  padding: 2rem;
+  width: 100%;
+  background: #181818;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: start;
+}
+.overflow .popup__bottom__buy__cont img {
+  border-radius: 2rem;
+  width: 100%;
+}
+.overflow .popup__bottom__buy__cont span {
+  font-size: 3rem;
+  color: #228B22;
+}
+.overflow .popup__bottom__buy__cont button {
+  width: 100%;
+  font-size: 3rem;
+  text-transform: uppercase;
+  border-radius: 2rem;
+  color: white;
+  padding: 1rem 0;
+  background: #228B22;
+  border: none;
+}
+
 /*# sourceMappingURL=BigCard.module.css.map */

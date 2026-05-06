@@ -56,3 +56,112 @@
     }
   }
 }
+.overflow{
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  @include position_fix;
+  @include flex-center;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+
+  .popup{
+    width: 90%;
+    height: 90%;
+    background: linear-gradient(to left top, #181818, #252525,);
+    border-radius: 2rem;
+    @include flex-between-column;
+    padding: 3rem;
+
+    &__top{
+      width: 100%;
+      height: 40px;
+
+      &__close{
+        width: 40px;
+        height: 40px;
+        @include flex-center;
+        cursor: pointer;
+        box-sizing: border-box;
+        transition: .33s;
+
+        &:hover{
+          rotate: 90deg;
+        }
+        .line{
+          width: 40px;
+          position: absolute;
+          height: 10px;
+          border-radius: 2rem;
+          background: white;
+          transform: rotate(45deg);
+        }
+      }
+    }
+    &__bottom{
+      width: 100%;
+      height: calc(100% - 60px);
+      @include flex-between;
+
+      &__info{
+        width: 70%;
+        height: 100%;
+        overflow-y: scroll;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        @include flex-between-column;
+        align-items: start;
+
+        &::-webkit-scrollbar {
+          display: none;
+          width: 0;
+          height: 0;
+        }
+        img{
+          width: 100%;
+          height: 500px;
+          object-fit: contain;
+        }
+        p{
+          margin: 1rem 0;
+        }
+
+      }
+      &__buy{
+        width: 25%;
+        height: 100%;
+
+        &__cont{
+          top: 0;
+          border-radius: 2rem;
+          padding: 2rem;
+          width: 100%;
+          background: #181818;
+          height: 600px;
+          @include flex-between-column;
+          align-items: start;
+
+          img{
+            border-radius: 2rem;
+            width: 100%;
+          }
+          span{
+            font-size: 3rem;
+            color: #228B22;
+          }
+          button{
+            width: 100%;
+            font-size: 3rem;
+            text-transform: uppercase;
+            border-radius: 2rem;
+            color: white;
+            padding: 1rem 0;
+            background: #228B22;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}
